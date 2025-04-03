@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Miranda CV</title>
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Particles JS -->
+  <script src="js/particles.min.js"></script>
+  
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+    section:not(#inicio) {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    section > .container {
+      position: relative;
+      z-index: 1;
+    }
+    
+    body {
+      font-family: 'Lato', sans-serif;
+      padding-top: 56px;
+    }
+    
+    .header-title {
+      font-family: 'Antonio', sans-serif;
+    }
+    
+    .portada {
+      background: url('img/portada.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center 30%;
+      min-height: 100vh;
+      position: relative;
+    }
+    .portada::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .portada > .container {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .perfil-img {
+      background: url('img/perfil-profesional.jpg') no-repeat center center;
+      background-size: cover;
+      min-height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand header-title" href="#">Alan Miranda</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#perfil">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Sección Inicio -->
+  <section id="inicio" class="portada d-flex align-items-center">
+    <div class="container text-center text-white">
+      <h1 class="display-4 fw-bold mb-4">Soy desarrollador web</h1>
+      <p class="lead bg-dark bg-opacity-75 p-3 rounded">
+        <span class="typed"></span>
+      </p>
+      <div id="frases" class="d-none">
+        <p>Si se puede imaginar, se puede programar</p>
+        <p>Primero resuelve el problema, despues escribes el codigo</p>
+        <p>La funcion de un buen software es hacer que lo complejo aparente ser simple</p>
+        <p>System.out.println("Hello world!");</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Perfil -->
+  <section id="perfil" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 text-danger fw-bold">Mi perfil profesional</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0 d-flex flex-column">
+          <div class="bg-dark text-white p-4 rounded shadow-lg" style="flex: 1;">
+            <h4 class="mb-0 fw-bold" style="text-align: justify; padding: 1.5rem;">
+                Tecnólogo en Análisis y Desarrollo de Sistemas de Información, preparado para la elaboración de páginas web, eficaz y eficiente para la construcción de sistemas de información, innovador y responsable para diseñar el sistema de acuerdo con los requerimientos del cliente, capacitado para realizar mis funciones laborales con el referente adoptado en la empresa, competente manejando bases de datos, comprometido con la misión, visión y políticas de la empresa.
+            </h4>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="perfil-img rounded shadow-lg h-100"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Experiencia -->
+  <section id="experiencia" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 text-danger fw-bold">Experiencias</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card bg-danger text-white h-100">
+            <div class="card-body">
+              <h4 class="card-title">Desarrollo conjunto</h4>
+              <h5 class="card-subtitle mb-2">Lavadero Wash pro dp</h5>
+              <p class="card-text">
+                Desarrollo de un sistema de gestión de turnos y ventas para un emprendimiento de autolavado como proyecto de grado.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-calendar-alt me-2"></i>2024</li>
+                <li><i class="fas fa-tasks me-2"></i>PHP, MySQL, JS, HTML</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section id="habilidades" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 text-danger fw-bold">Habilidades</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-2 text-center mb-4">
+          <i class="fab fa-html5 fa-4x mb-2" style="color: #E44D26;"></i>
+          <h3 class="mb-0">HTML5</h3>
+        </div>
+        <div class="col-6 col-md-2 text-center mb-4">
+          <i class="fab fa-css3-alt fa-4x mb-2" style="color: #2965F1;"></i>
+          <h3 class="mb-0">CSS3</h3>
+        </div>
+        <div class="col-6 col-md-2 text-center mb-4">
+          <i class="fab fa-js-square fa-4x mb-2" style="color: #F7DF1E;"></i>
+          <h3 class="mb-0">JavaScript</h3>
+        </div>
+        <div class="col-6 col-md-2 text-center mb-4">
+          <i class="fab fa-php fa-4x mb-2" style="color: #777BB3;"></i>
+          <h3 class="mb-0">PHP</h3>
+        </div>
+        <div class="col-6 col-md-2 text-center mb-4">
+          <i class="fas fa-database fa-4x mb-2" style="color: #00758F;"></i>
+          <h3 class="mb-0">MySQL</h3>
+        </div>
+        <div class="col-6 col-md-2 text-center mb-4">
+          <i class="fab fa-bootstrap fa-4x mb-2" style="color: #7952B3;"></i>
+          <h3 class="mb-0">Bootstrap</h3>
+        </div>
+        <div class="col-6 col-md-2 text-center mb-4">
+          <i class="fab fa-python fa-4x mb-2" style="color: #3776AB;"></i>
+          <h3 class="mb-0">Python</h3>
+        </div>
+        <div class="col-6 col-md-2 text-center mb-4">
+          <i class="fab fa-github fa-4x mb-2" style="color: #181717;"></i>
+          <h3 class="mb-0">GitHub</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id ="contacto" class="py-5 bg-light">
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3">Contacto</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="fas fa-envelope me-2"></i> alanjaviermirandalopez@gmail.com</li>
+              <li class="mb-2"><i class="fas fa-phone me-2"></i> 3023245253</li>
+              <li><i class="fas fa-map-marker-alt me-2"></i> Calle 30 #24-73 Ciénaga-Magdalena</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5 class="mb-3">Referencias</h5>
+            <h4 class="mb-2">Jaime Guette</h4>
+            <p class="mb-1"><i class="fas fa-phone me-2"></i>Telefono: 3016702547</p>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p class="mb-0">Alan Miranda - Todos los derechos reservados &copy; 2024</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Typed JS -->
+  <script src="js/typed.js"></script>
+  
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
